@@ -6,6 +6,7 @@ const beneficiaryRoutes = require("./routes/beneficiaryRoutes");
 const grievanceRoutes = require("./routes/grievance");
 const geoRoutes = require("./routes/geoRoutes");
 const fpsRoutes = require("./routes/fpsRoutes");
+const authRoutes = require("./routes/authRoutes");
 
 dotenv.config();
 const app = express();
@@ -33,6 +34,9 @@ app.use("/api/grievances", grievanceRoutes);
 app.use("/api", geoRoutes);
 
 app.use("/api", fpsRoutes);
+
+app.use("/api/auth", authRoutes);
+
 
 
 
