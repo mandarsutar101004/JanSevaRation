@@ -1,0 +1,11 @@
+{
+  "name": "JanSevaRation",
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && nodemon server.js",
+    "start:frontend": "cd frontend && npm start"
+  },
+  "dependencies": {
+    "react-router-dom": "^7.9.4"
+  }
+}
